@@ -1,17 +1,4 @@
 ### Create a conda environment on your own machine
 
-When you install Anaconda, conda makes a single base environment for you. It is called `base` and this is why it says "(base)" at your terminal prompt. 
-  For this course, you need a dedicated conda enviromnet for your exercises on both your local machine and on the cluster. Lets call both of them `popgen`.
+conda create --name imcsegpipe python=3.9 jupyterlab jupytext pip -c conda-forge -c defaults
 
-The environmnet on your local machine does not need a lot of packages since it mainly serves to let you connect to the cluster. 
-  This command creates a `popgen` enviromnet and installs `slurm-jupyter` from my conda channel along with a few other packages that may come in handy:
-
-```bash
-conda create --name SpatProt -c anaconda -c conda-forge -c plotly  
-```
-
-<!--
-```bash
-conda create --name popgen -c kaspermunch slurm-jupyter jupyter jupyterlab pandas numpy matplotlib ipympl nodejs seaborn scikit-learn statsmodels
-```
---->
